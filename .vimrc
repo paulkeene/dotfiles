@@ -4,6 +4,8 @@ set nocompatible
 
 set hidden
 
+set guifont=PragmataPro:h14
+
 syntax enable
 set background=dark
 colorscheme solarized
