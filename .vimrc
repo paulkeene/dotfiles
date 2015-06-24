@@ -2,6 +2,8 @@ execute pathogen#infect()
 
 set nocompatible
 
+set hidden
+
 syntax enable
 set background=dark
 colorscheme solarized
