@@ -8,8 +8,13 @@ set nu
 set guifont=PragmataPro:h14
 
 syntax enable
-set background=dark
-colorscheme solarized
+
+if has('gui_running')
+    set background=dark
+    colorscheme solarized
+else
+    colorscheme wombat256
+endif
 
 set hlsearch
 noremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
