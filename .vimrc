@@ -3,6 +3,7 @@ execute pathogen#infect()
 set nocompatible
 
 set hidden
+set nu
 
 set guifont=PragmataPro:h14
 
