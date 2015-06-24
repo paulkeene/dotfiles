@@ -9,6 +9,12 @@ set guifont=PragmataPro:h14
 
 syntax enable
 
+set shiftwidth=4
+set tabstop=4
+set softtabstop=4
+set expandtab
+set smarttab
+
 if has('gui_running')
     set background=dark
     colorscheme solarized
