@@ -13,4 +13,5 @@ colorscheme solarized
 " ctrlp
 let g:ctrlp_map = ';'
 let g:ctrlp_cmd = 'CtrlP'
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+set wildignore+=*/tmp/*,*/env/*,*.so,*.swp,*.zip
+let g:ctrlp_working_path_mode = 0
