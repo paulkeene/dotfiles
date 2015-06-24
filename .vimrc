@@ -10,6 +10,9 @@ syntax enable
 set background=dark
 colorscheme solarized
 
+set hlsearch
+noremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
+
 " ctrlp
 let g:ctrlp_map = ';'
 let g:ctrlp_cmd = 'CtrlP'
