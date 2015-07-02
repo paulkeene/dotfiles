@@ -31,8 +31,11 @@ noremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 " ctrlp
 let g:ctrlp_map = ';'
 let g:ctrlp_cmd = 'CtrlP'
-set wildignore+=*/tmp/*,*/env/*,*.so,*.swp,*.zip
 let g:ctrlp_working_path_mode = 0
+let g:ctrlp_custom_ignore = {
+    \ 'dir': '\.git$\|tmp$\|env$\|node_modules$\|bower_components$\|dist$\|vendor$',
+    \ 'file': '\.exe$\|\.so$\|\.swp$\|\.pyc$\|\.zip$'
+    \ }
 
 " indentation
 autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
