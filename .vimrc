@@ -25,6 +25,8 @@ else
     colorscheme wombat256
 endif
 
+set ignorecase
+set smartcase
 set hlsearch
 noremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
@@ -38,10 +40,10 @@ let g:ctrlp_custom_ignore = {
     \ }
 
 " indentation
-autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
-autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 softtabstop=2
-autocmd FileType css setlocal shiftwidth=2 tabstop=2 softtabstop=2
-autocmd FileType jinja setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType html setlocal shiftwidth=4 tabstop=4 softtabstop=4
+autocmd FileType javascript setlocal shiftwidth=4 tabstop=4 softtabstop=4
+autocmd FileType css setlocal shiftwidth=4 tabstop=4 softtabstop=4
+autocmd FileType jinja setlocal shiftwidth=4 tabstop=4 softtabstop=4
 autocmd FileType haskell setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType python setlocal shiftwidth=4 tabstop=4 softtabstop=4
 autocmd FileType ruby setlocal shiftwidth=4 tabstop=4 softtabstop=4
@@ -59,6 +61,8 @@ autocmd FileType c,cpp,java,php,ruby,python,haskell,html,javascript,jinja autocm
 
 " default to jinja syntax highlighting for html templates
 autocmd BufNewFile,BufRead *.html set filetype=jinja
+
+"autocmd BufRead,BufNewFile *.html,*.jsx,*.js setlocal noexpandtab
 
 " highlight trailing whitespace
 highlight ExtraWhitespace ctermbg=red guibg=red
@@ -82,3 +86,5 @@ let g:syntastic_check_on_wq = 0
 " clean up UI in gvim
 set guioptions-=r  "remove right-hand scroll bar
 set guioptions-=L  "remove left-hand scroll bar
+
+let g:localvimrc_sandbox = 0
