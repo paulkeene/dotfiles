@@ -45,6 +45,7 @@ autocmd FileType javascript setlocal shiftwidth=4 tabstop=4 softtabstop=4
 autocmd FileType css setlocal shiftwidth=4 tabstop=4 softtabstop=4
 autocmd FileType jinja setlocal shiftwidth=4 tabstop=4 softtabstop=4
 autocmd FileType haskell setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType purescript setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType python setlocal shiftwidth=4 tabstop=4 softtabstop=4
 autocmd FileType ruby setlocal shiftwidth=4 tabstop=4 softtabstop=4
 autocmd FileType nginx setlocal shiftwidth=4 tabstop=4 softtabstop=4
