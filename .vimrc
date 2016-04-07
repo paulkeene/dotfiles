@@ -65,6 +65,8 @@ autocmd BufNewFile,BufRead *.html set filetype=jinja
 
 "autocmd BufRead,BufNewFile *.html,*.jsx,*.js setlocal noexpandtab
 
+autocmd BufRead,BufNewFile *.go setlocal noexpandtab
+
 " highlight trailing whitespace
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
