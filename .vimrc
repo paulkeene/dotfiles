@@ -62,6 +62,7 @@ autocmd FileType c,cpp,java,php,ruby,python,haskell,html,javascript,jinja autocm
 
 " default to jinja syntax highlighting for html templates
 autocmd BufNewFile,BufRead *.html set filetype=jinja
+autocmd BufNewFile,BufRead *.go set filetype=go
 
 "autocmd BufRead,BufNewFile *.html,*.jsx,*.js setlocal noexpandtab
 
