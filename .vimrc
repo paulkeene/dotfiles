@@ -20,7 +20,7 @@ set smarttab
 
 if has('gui_running')
     set background=dark
-    colorscheme solarized
+    colorscheme base16-default
 else
     colorscheme wombat256
 endif
