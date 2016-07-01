@@ -16,3 +16,6 @@
 [submodule ".vim/bundle/purescript.vim"]
 	path = .vim/bundle/purescript.vim
 	url = https://github.com/raichoo/purescript-vim.git
+[submodule ".vim/bundle/dracula-theme"]
+	path = .vim/bundle/dracula-theme
+	url = git@github.com:dracula/vim.git
