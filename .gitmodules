@@ -34,3 +34,6 @@
 [submodule ".vim/bundle/badwolf-theme"]
 	path = .vim/bundle/badwolf-theme
 	url = git@github.com:sjl/badwolf.git
+[submodule ".vim/pack/plugins/start/vim-ripgrep"]
+	path = .vim/pack/plugins/start/vim-ripgrep
+	url = git@github.com:jremmen/vim-ripgrep.git
