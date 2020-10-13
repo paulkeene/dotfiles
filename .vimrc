@@ -43,7 +43,6 @@ let g:ctrlp_custom_ignore = {
 autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType css setlocal shiftwidth=2 tabstop=2 softtabstop=2
-autocmd FileType jinja setlocal shiftwidth=4 tabstop=4 softtabstop=4
 autocmd FileType haskell setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType purescript setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType python setlocal shiftwidth=4 tabstop=4 softtabstop=4
@@ -59,13 +58,9 @@ fun! <SID>StripTrailingWhitespaces()
     call cursor(l, c)
 endfun
 
-autocmd FileType c,cpp,java,php,ruby,python,haskell,html,javascript,jinja autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
+autocmd FileType c,cpp,java,php,ruby,python,haskell,html,javascript, autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
 
-" default to jinja syntax highlighting for html templates
-autocmd BufNewFile,BufRead *.html set filetype=jinja
 autocmd BufNewFile,BufRead *.go set filetype=go
-
-"autocmd BufRead,BufNewFile *.html,*.jsx,*.js setlocal noexpandtab
 
 autocmd BufRead,BufNewFile *.go setlocal noexpandtab
 
