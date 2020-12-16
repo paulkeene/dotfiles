@@ -1,5 +1,3 @@
-execute pathogen#infect()
-
 set nocompatible
 
 " ignore modelines (vim configuration included in source files)
