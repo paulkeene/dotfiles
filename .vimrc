@@ -1,4 +1,19 @@
+call plug#begin('~/.vim/plugged')
+
+Plug 'vim-airline/vim-airline'
+Plug 'mattn/emmet-vim'
+Plug 'dense-analysis/ale'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'preservim/nerdcommenter'
+
+" Color schemes
+Plug 'cocopon/iceberg.vim'
+
+call plug#end()
+
 set nocompatible
+
+let mapleader = ","
 
 " ignore modelines (vim configuration included in source files)
 set nomodeline
@@ -28,14 +43,8 @@ set smartcase
 set hlsearch
 noremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
-" ctrlp
-let g:ctrlp_map = ';'
-let g:ctrlp_cmd = 'CtrlP'
-let g:ctrlp_working_path_mode = 0
-let g:ctrlp_custom_ignore = {
-    \ 'dir': '\.git$\|tmp$\|env$\|node_modules$\|bower_components$\|dist$\|vendor$',
-    \ 'file': '\.exe$\|\.so$\|\.swp$\|\.pyc$\|\.zip$'
-    \ }
+" fzf
+nmap ; :FZF<CR>
 
 " indentation
 autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
@@ -70,18 +79,6 @@ autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
-
-" syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_python_checkers = ['flake8']
-let g:syntastic_javascript_checkers = ['eslint']
 
 " clean up UI in gvim
 set guioptions-=r  "remove right-hand scroll bar
